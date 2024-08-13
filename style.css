@@ -1,0 +1,491 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --grey: rgb(139, 139, 139);
+    --font: "Syne", sans-serif;
+    --bg: #f8f8f8;
+    
+}   
+
+
+aside{
+    display: flex;
+    flex-direction: column;
+    
+    box-shadow: 0 0 1px rgba(0, 0 ,0,0.8);
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.aside-child{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+
+
+h1{
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+}
+
+nav{
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+nav p{
+
+    text-decoration: none;
+    color: var(--grey);
+    font-size: 13px;
+    font-weight: 500;
+    font-family: var(--font);
+    cursor: pointer;
+    margin: 0;
+    transition: 0.5s ease;
+}
+.body{
+
+    width: 100%;
+}
+
+.home{
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--bg);
+    box-shadow: inset 0 0 1px rgba(0, 0 ,0,0.8);
+    min-height: 100vh;
+}
+
+
+.text-section{
+
+    padding: 0 0 0 0px;
+
+}
+
+.text-section h3, .p{
+    
+    line-height: 50px;
+    font-family: var(--font);
+}
+.text-section h3{
+    font-family: var(--font);
+    font-size: 31px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: black;
+}
+button{
+    padding: 10px;
+    min-width: 220px;
+    font-size: small;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border: none;
+    position: relative;
+    transition: .6s ease;
+    overflow: hidden; 
+    background-color: black;
+    color: white;
+}
+
+.text-section button::before {
+    content: "VIEW PORTFOLIO";
+    width: 100%;
+    height: 100%;
+    background-color: #a1a1a1;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.2s ease; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+button:hover::before {
+    height: 0%;
+
+}
+
+
+.new{
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #c0c0c0;
+    background-image: url(images/WhatsApp\ Image\ 2024-08-11\ at\ 5.07.47\ PM.jpeg);
+    background-position: 20% 80% ;
+    background-size: cover;
+}
+.active{
+
+    color: black;
+    font-weight: 600;
+}
+
+.active-content{
+
+    display: flex;
+}
+.passive-content{
+
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .aside{
+        height: 60px;
+        min-height: 60px;
+    
+    }
+    .aside-child{
+        height: 60px;
+        
+    }
+    section{
+        min-height: 100vh;
+        margin-top: 60px;
+    }
+    nav{
+        margin: 0;
+        position: absolute;
+        top: -60px;
+        display: none;
+        right: 0px;
+        z-index: 2000;
+        width: 80%;
+        height: 100vh;
+        background-color: #fff;
+        align-items: center;
+        justify-content: center;
+        transition: 1s ease;
+        box-shadow: 0 0 2px rgba(0, 0 ,0,0.4);
+        
+    }
+    .text-section{
+        margin-left: 20px;
+        
+    }
+    
+    
+    
+}
+
+.fa-bars{
+
+    font-size: x-large;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0 ,0,0.8);
+    padding: 5px 7px;
+    border-radius: 2px;
+    border-radius: 20px;
+    background-color: rgb(88, 88, 88);
+    color: white;
+    transition: 0.6s ease;
+}
+
+.fa-close{
+
+    position: absolute;
+    top: 30px;
+    padding: 3px 7px;
+    right: 20px;
+    font-size: x-large;
+    box-shadow: 0 0 2px rgba(0, 0 ,0,0.8);
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    transition: 0.6s ease;
+}
+
+nav p:hover{
+
+    color: black;
+}
+
+@keyframes slideEffect{
+
+    from{
+
+        width: 0;
+        
+    }
+    to{
+
+        width: 80%;
+        
+    }
+}
+
+
+#about{
+
+    background-color: var(--bg);
+    
+}
+
+.bioAbout{
+
+    min-height: 100vh;
+    align-items: center;
+    font-family: var(--font);
+    justify-content: space-around;
+    
+    
+}
+.about-heading{
+
+    font-weight: 600;
+    font-size: 20px;    
+    letter-spacing: 2px;
+}
+.biography p{
+
+    color: var(--grey);
+}
+
+.biography button::before {
+    content: "DOWNLOAD CV";
+    width: 100%;
+    height: 100%;
+    background-color: #a1a1a1;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.2s ease; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.biography button:hover::before{
+
+    height: 0%;
+}
+
+
+address span{
+
+    color: var(--grey);
+}
+
+address{
+
+    font-weight: 600;
+}
+
+.programing-skills{
+
+    height: auto;
+    padding: 70px 0;
+}
+
+.text{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    font-family: var(--font);
+}
+.text:nth-child(1){
+
+    text-align: start;
+}
+.text:nth-child(2){
+
+    text-align: end;
+}
+
+
+.radio{
+
+    width: 60%;
+    height: 2px;
+    background-color: #c0c0c0;
+    position: relative;
+}
+
+.radio::before{
+
+    content: "";
+    height: 2px;
+    position: absolute;
+    background-color: var(--grey);
+    top: 0;
+    left: 0;
+
+}
+
+.htmlAndCss .radio::before{
+
+    width: 80%;
+}
+.javaScript .radio::before{
+
+    width: 40%;
+}
+.nodejs .radio::before{
+
+    width: 20%;
+}
+
+@media screen and (max-width: 768px) {
+
+    
+    .personal-details{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        margin-top: 20px;
+    }
+}
+.biography button{
+    z-index: 0;
+
+}
+
+section{
+
+    background-color: var(--bg);
+}
+.card-service{
+
+    padding: 40px 35px;
+    color: var(--grey);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    font-family: var(--font);
+    font-size: large;
+    border-radius: 2px;
+}
+
+.card-service ul li{
+
+    margin: 10px 0;
+}
+
+.card-service > p{
+
+    font-weight: 700;
+    color: black;
+    text-wrap: nowrap;
+
+}
+
+.card-service i{
+
+    font-size: 30px;
+    padding: 4px 0 20px 0;
+}
+
+#zoom{
+
+    display: none ;
+}
+.zoom{
+    
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #474747a2;
+    top: 0;
+    left: 0;
+
+}
+
+.zoom > div{
+
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.zoom .card{
+
+    width: 80%;
+}
+
+
+.contact .cards{
+
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0, 0 ,0,0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 10px;
+}
+.contact .cards span{
+
+    color: var(--grey);
+}
+form input, select, textarea{
+
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    box-shadow: 0 0 3px rgba(0, 0 ,0,0.4);
+    border-radius: 3px;
+    outline: none;
+    color: #a1a1a1;
+    font-family: var(--font);
+}
+
+.card-a{
+    font-family: var(--font);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-a a{
+    position: relative;
+}
+.card-a a::before{
+
+    content: "";
+    width: 0;
+    position: absolute;
+    height: 2px;
+    top: 24px;
+    left: 0;
+    background-color: var(--grey);
+    transition: 0.5s ease-in-out;
+    
+}
+
+.card-a a{
+
+    text-decoration: none;
+    color: var(--grey);
+    font-weight: 300;
+}
+.card-a:hover.card-a a::before{
+
+    width: 100%;
+}
