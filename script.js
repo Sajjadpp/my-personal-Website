@@ -65,3 +65,14 @@ closeNav.addEventListener("click",()=>{
     nav.style.display = "none"
     
 })
+
+
+function lToFAnimation(item){
+
+    console.log("ltoF")
+    item.classList.add("animation")
+    setTimeout(()=>{
+        item.classList.remove("animation")
+    },2000)
+    
+}

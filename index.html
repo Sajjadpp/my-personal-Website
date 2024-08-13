@@ -28,23 +28,22 @@
                     <p onclick="changeDisplay('about')" class=" tab-links">ABOUT</p>
                     <p onclick="changeDisplay('service')" class="tab-links">SERVICE</p>
                     <p onclick="changeDisplay('portfolio')" class="tab-links">PORTFOLIO</p>
-                    <p onclick="changeDisplay('news')" class="tab-links">NEWS</p>
                     <p onclick="changeDisplay('contact')" class="tab-links">CONTACT</p>
                 </nav>
                 <footer class="mt-5 d-none d-md-flex flex-md-column">
-                    <p class="mt-0 mb-0">&copy; 2024, Kioto</p>
-                    <h6>Created by Sajjad</h6>
+                    <p class="mt-0 mb-0">&copy; 2024, Sajjad</p>
+                    <h6 class="mt-2">Created by Sajjad</h6>
                 </footer>
             </div>
             
         </aside>
 
-        <section class="home col-md-9 col-12 p-0 tab-content passive-content flex-column-reverse flex-md-row justify-content-md-around justify-content-center gap-5 gap-md-0" id="homes">
+        <section class="home col-md-9 col-12 p-0 tab-content active-content flex-column-reverse flex-md-row justify-content-md-around justify-content-center gap-5 gap-md-0" id="homes">
             <div class="text-section col-md-5">
                 <div class="">
                     <p>// MUHAMMED SAJJAD</p>
                     <h3 class="px-3">CREATIVE DESIGNER <br>AND <span> DEVELOPER</span><span class="d-none">FREELANCER</span></h3>
-                    <div class="w-100 d-flex justify-content-center"><button class="hbtn">VIEW PORTFOLIO</button></div>
+                    <div class="w-100 d-flex justify-content-center"><button class="hbtn" onclick="changeDisplay('portfolio')">VIEW PORTFOLIO</button></div>
                 </div>
             </div>
             
@@ -110,12 +109,12 @@
             </div>
         </section>
         
-        <section class="container-fluid passive-content tab-content col-12 col-md-9 flex-column p-5" id="service">
+        <section class="container-fluid passive-content tab-content col-12 col-md-9 flex-column p-5" id="service" onchange="lToFAnimation(this)">
 
             <p class="about-heading mb-2 px-4 pt-5">// TOP NOTCH SERVICES</p>
 
             <div class="card-container row gx-0 mt-5">
-                <div class=" col-12 col-md-4 gx-0 p-4 col-sm-6">
+                <div class=" col-12 col-lg-4  gx-0 p-4 col-sm-6">
                     <div class="card-service">
                         <i class="fa-solid fa-bezier-curve"></i>
                         <p>Creative Design</p>
@@ -128,7 +127,7 @@
                     </div>
                     
                 </div>
-                <div class=" col-12 col-md-4 gx-0 p-4 col-sm-6">
+                <div class=" col-12 col-lg-4 gx-0 p-4 col-sm-6">
                     <div class="card-service">
                         <i class="fa-solid fa-window-restore"></i>
                         <p>Web Designing</p>
@@ -141,7 +140,7 @@
                     </div>
                     
                 </div>
-                <div class=" col-12 col-md-4 gx-0 p-4 col-sm-6">
+                <div class=" col-12 col-lg-4 gx-0 p-4 col-sm-6">
                     <div class="card-service">
                         <i class="fa-brands fa-react"></i>
                         <p>FrontEnd Developer</p>
@@ -154,12 +153,12 @@
                     </div>
                     
                 </div>
-                <div class=" col-12 col-md-4 col-sm-6 gx-0 p-4">
+                <div class=" col-12 col-lg-4 col-sm-6 gx-0 p-4">
                     <div class="card-service">
                         <i class="fa-solid fa-service"></i>
                         <p>BackEnd Developer</p>
                         <hr>
-                        <ul class="gap-">
+                        <ul class="">
                             <li>Nodejs</li>
                             <li>Express js</li>
                             <li>Mongo DB</li>
@@ -179,7 +178,7 @@
                     <div class="card-service ">
                         <img src="images/tesla.png" onclick="zoomEffect('tesla')" class="img-fluid" alt="image">
                         <hr>
-                        <h5 class="text-dark">Tesla Clone</h5>
+                        <h5 class="text-dark">Tesla Clone  <a href="https://sajjadpp.github.io/tesla-Clone/" class="ms-4 h3">></a></h5>
                         <span class="h6">web Design</span>
                     </div>
         
@@ -188,7 +187,7 @@
                     <div class="card-service ">
                         <img src="/images/youtube.png" onclick="zoomEffect('youtube')" class="img-fluid" alt="image">
                         <hr>
-                        <h5 class="text-dark">Yotube Clone</h5>
+                        <h5 class="text-dark">Yotube Clone <a href="https://sajjadpp.github.io/youtube-clone/" class="ms-4 h3">></a></h5></h5>
                         <span class="h6">web Design</span>
                     </div>
         
@@ -197,7 +196,7 @@
                     <div class="card-service">
                         <img src="images/discord.png" onclick="zoomEffect('discord')" class="img-fluid" alt="image">
                         <hr>
-                        <h5 class="text-dark">Discord Clone</h5>
+                        <h5 class="text-dark">Discord Clone <a href="https://sajjadpp.github.io/discord-clone/" class="ms-4 h3">></a></h5></h5>
                         <span class="h6"><a href="">web Design</a></span>
                         
                     </div>
@@ -207,7 +206,16 @@
                     <div class="card-service " >
                         <img src="images/todoApp.png" onclick="zoomEffect('todoApp')" class="img-fluid" alt="image">
                         <hr>
-                        <h5 class="text-dark">toDo App</h5>
+                        <h5 class="text-dark">ToDo App <a href="https://github.com/Sajjadpp/Todo-app" class="ms-4 h3">></a></h5></h5>
+                        <span class="h6">BackEnd</span>
+                    </div>
+                    
+                </div>
+                <div class=" col-12 col-md-4 gx-0 p-4 col-sm-6">
+                    <div class="card-service " >
+                        <img src="images/amazon.png" onclick="zoomEffect('amazon')" class="img-fluid" alt="image">
+                        <hr>
+                        <h5 class="text-dark">ToDo App <a href="https://github.com/Sajjadpp/Todo-app" class="ms-4 h3">></a></h5></h5>
                         <span class="h6">BackEnd</span>
                     </div>
                     
@@ -223,7 +231,7 @@
             </div>
         </section>
 
-        <section class="contact active-content tab-content col-12 col-md-9 p-md-5" id="contact">
+        <section class="contact passive-content tab-content col-12 col-md-9 p-md-5" id="contact" >
 
             <div class="div container-fluid pt-2">
                 <p class="pt-5 about-heading">// GET IN TOUCH</p>
@@ -259,7 +267,7 @@
                 </div>
 
                 <div id="result" class="mt-5"></div>
-                                <form action="https://api.web3forms.com/submit" method="POST" name="sentMessage" id="contactForm" novalidate="novalidate">
+                                <form action="https://api.web3forms.com/submit" method="POST" name="sentMessage" id="contactForm" novalidate="novalidate" class="mt-5">
                                     <input type="hidden" name="access_key" value="9474507b-3a4a-4d38-8c98-857911fe4b16">
                                     <div class="control-group">
                                         <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required="required" />

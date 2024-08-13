@@ -489,3 +489,13 @@ form input, select, textarea{
 
     width: 100%;
 }
+a{
+    color: var(--grey);
+    text-decoration: none;
+    
+}
+
+.animation{
+
+    background-color: antiquewhite;
+}
