@@ -22,6 +22,7 @@ function changeDisplay(name){
     }
     changeTag.classList.remove("passive-content")
     changeTag.classList.add("active-content")
+    changeTag.style.animation = "lToR 1.5s ease"
     nav.style.display = "none"
     // have facing a bug while in zIndex
     
@@ -66,13 +67,3 @@ closeNav.addEventListener("click",()=>{
     
 })
 
-
-function lToFAnimation(item){
-
-    console.log("ltoF")
-    item.classList.add("animation")
-    setTimeout(()=>{
-        item.classList.remove("animation")
-    },2000)
-    
-}

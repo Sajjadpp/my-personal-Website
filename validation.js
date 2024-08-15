@@ -1,29 +1,3 @@
-function changeVal(e, validation) {
-  console.log(validation);
-  validation === "number" ? numValidation() : wordValidation();
-
-  function wordValidation() {
-    if (e.value.includes(validation)) {
-      e.style.borderBottom = "2px solid green";
-      console.log(document.getElementById("form"));
-    } else {
-      e.style.borderBottom = "2px solid red";
-
-      console.log("false");
-    }
-  }
-
-  function numValidation() {
-    console.log(e.value.length);
-
-    if (e.value.length == 10) {
-      console.log(parseInt(e.value));
-      e.style.borderBottom = "2px solid green";
-    } else {
-      e.style.borderBottom = "2px solid red";
-    }
-  }
-}
 
 
     document.getElementById('contactForm').addEventListener('submit', function(e) {
